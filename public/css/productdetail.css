@@ -1,0 +1,220 @@
+.papasuke {
+  background: #d9be89;
+  font-family: "Nunito", sans-serif;
+}
+.container {
+  display: flex;
+  /* margin-top: 100px; */
+  /* padding: 0 39px; */
+}
+.papasuke .left {
+  width: 30%;
+  margin: 109px 0 0 15%;
+}
+.papasuke .left .name {
+  font-size: 30px;
+  font-weight: 800;
+}
+.papasuke .left .size {
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: 16px;
+}
+.papasuke .left .size .option {
+  background: black;
+  color: white;
+  margin: 6px;
+  padding: 1px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.papasuke .left .size .option.active {
+  border: 2px solid white;
+}
+
+.papasuke .left .size .select {
+  display: flex;
+  font-size: 15px;
+}
+.papasuke .left .number {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+.papasuke .left .number input {
+  border-radius: 10px;
+  width: 41px;
+  outline: none;
+  border: none;
+  padding: 3px 0px 3px 26px;
+}
+.papasuke .price {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 10px;
+  display: flex;
+}
+
+.papasuke .left .description {
+  margin-top: 10px;
+}
+.papasuke .left button {
+  background: #675941;
+  border: none;
+  border-radius: 27px;
+  width: 130px;
+  height: 38px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+}
+.papasuke .center {
+  width: 70%;
+  position: relative;
+  margin-top: 141px;
+  z-index: 4;
+  /* padding-left: 0; */
+  text-align: center;
+}
+.papasuke .center::after {
+  content: "";
+  top: -48px;
+  left: 149px;
+  width: 60%;
+  height: 126%;
+  position: absolute;
+  background-color: #3c3a3a;
+  z-index: -1;
+  border-radius: 253px;
+}
+.papasuke .center img {
+  width: 45%;
+  z-index: 1;
+}
+.papasuke .chia {
+  margin-top: 100px;
+  size: 1px;
+  height: 1px;
+  width: 100%;
+  background-color: #675941;
+}
+#hide_input,
+.hide_id {
+  display: none;
+}
+.comment {
+  margin: 24px 0 0 66px;
+}
+.comment .bigwrap {
+  margin-top: 21px;
+}
+.main-comment form input {
+  border-radius: 29px;
+  border: 1px solid;
+  outline: none;
+  width: 50%;
+  font-size: 15px;
+  border-bottom: 1px solid;
+  height: 45px;
+  font-family: "Nunito", sans-serif;
+  padding-left: 20px;
+}
+.comment_content .top {
+  display: flex;
+}
+.comment_content .top .name {
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+}
+.comment_content .top .time {
+  font-family: "Nunito", sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 8px 7px 0 8px;
+}
+
+.comment_content .reply button.buttonnn {
+  background: none;
+  font-weight: 800;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  color: #3c3a3a;
+  transition: 0.5s;
+}
+.comment_content .reply button.buttonnn:hover {
+  color: #1d1b1b;
+  transition: 0.5s;
+}
+form .add_comment_btn {
+  background: none;
+  border: none;
+  color: #675941;
+  font-size: 28px;
+  height: 39px;
+  font-weight: 800;
+}
+form .add_comment_btn ion-icon {
+  margin-bottom: -7px;
+}
+input.repp {
+  border-radius: 30px;
+  border: 1px solid;
+  padding-left: 4px;
+  outline: none;
+  display: none;
+}
+form.replycmtt{
+  display: flex;
+}
+form .add_comment_btn_reply {
+  background: none;
+  border: none;
+  color: #675941;
+  font-size: 20px;
+  height: 39px;
+  font-weight: 800;
+  display: none;
+}
+form .add_comment_btn_reply ion-icon {
+  margin-bottom: -5px;
+}
+.hideee {
+  display: none;
+}
+.wrapper_comment_tiny{
+  margin-left: 10px;
+}
+.wrapper_comment{
+  margin-top: 10px;
+}
+.love-icon{
+ 
+display: inline-flex;
+ 
+width: 36px;
+ 
+position: absolute;
+ 
+left: 30rem;
+ 
+/* display: flex; */
+ 
+cursor: pointer;
+ 
+color: #675941;
+ 
+justify-content: end;
+}
+.love-icon svg{
+  width: 23px;
+}
+.numberlike{
+  width: 13px;
+  display: flex;
+  padding-top: 2.5px;
+  justify-content: flex-start;
+}

@@ -1,0 +1,35 @@
+.footer{
+   
+    background-color: #242424;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+.footer .cafe{
+    margin: auto;
+    color: rgb(253, 251, 251);
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+.footer .menuu ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.footer .menuu ul li{
+margin: 10px;
+}
+.footer .icon{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.footer .icon ion-icon{
+    margin: 10px;
+}
+.footer .coppyright{
+    background-color:black;
+    color: white;
+    line-height: 89px;
+    text-align: center;
+}

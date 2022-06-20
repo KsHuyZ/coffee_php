@@ -1,0 +1,142 @@
+.editproduct-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  transition: 1s;
+  padding-left: 31px;
+  font-family: "Nunito", sans-serif;
+  padding-left: 46px;
+}
+.dropdown{
+  margin-top: 8px;
+}
+.size{
+  margin-top: 8px;
+}
+
+input.input {
+    width: 55px;
+    border-radius: 10px;
+    border: 1px solid;
+    padding-left: 38px;
+    margin-left: 11px;
+    margin-top: 8px;
+}
+.editproduct-form form {
+  background: white;
+  width: 74rem;
+  height: 573px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+.editproduct-form form .title {
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+}
+.editproduct-form .addform {
+  display: flex;
+  justify-content: space-evenly;
+}
+.editproduct-form .addform .select-e {
+  width: 177px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: black;
+  color: #ffff;
+  border: none;
+  outline: none;
+}
+.addform .right input {
+  width: 300px;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid #7b4c1e;
+  padding-left: 10px;
+}
+.addform .right input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #000000;
+  transition: 0.5s;
+  border: none;
+}
+.right .quantity{
+  margin-top: 20px;
+}
+.size .size-list {
+  margin-top: 8px;
+  display: flex;
+}
+.image{
+  margin-top: 10px;
+}
+
+.size .size-type {
+  background: black;
+  color: white;
+  margin: 6px;
+  padding: 1px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.img {
+    width: 400px;
+    height: 260px;
+    border: 2px dashed #7b4c1e;
+    background: url(http://localhost/php_mvc/public/image/Upload.svg);
+    background-size: 199px;
+    background-repeat: no-repeat;
+    /* margin-left: 32px; */
+    background-position: bottom;
+}
+.img .title-img {
+  position: absolute;
+  top: 41%;
+  left: 22%;
+  /* font-size: 25px; */
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  font-size: 39px;
+  animation: suspension 1s linear infinite;
+}
+
+#image-edit {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+.price-title{
+  margin-top: 8px;
+}
+button.btnsmit-e{
+  width: 107px;
+  height: 39px;
+  border-radius: 27px;
+  border: none;
+  background-color: black;
+  color: white;
+  margin: 0 0 0 300px;
+  cursor: pointer;
+}
+@keyframes suspension{
+  100%{
+    top: 41%;
+  }
+  50%{
+    top: 37%;
+  }
+  0%{
+    top: 41%;
+  }
+}

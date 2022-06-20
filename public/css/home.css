@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap");
+body {
+  background-color: #d9be89;
+}
+.container {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+.sliders {
+  width: 500%;
+  display: flex;
+}
+.sliders input {
+  display: none;
+}
+.slide {
+  width: 20%;
+  position: relative;
+  transition: 0.9s;
+}
+.slide::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(56 52 52 / 58%);
+  height: 570px;
+}
+.slide img {
+  width: 100%;
+  height: 570px;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: -40px;
+}
+.manual-btn {
+  border: 2px solid #ad6d2f;
+  padding: 5px;
+  border-radius: 100000000px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btn:hover {
+  background-color: #ad6d2f;
+}
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+.navigation-auto {
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: 534px;
+}
+.navigation-auto div {
+  border: 2px solid #ad6d2f;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #ad6d2f;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #ad6d2f;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #ad6d2f;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: #ad6d2f;
+}
+.container-2 {
+  width: 100%;
+  background-image: url(http://coffeeking.like-themes.com/wp-content/uploads/2017/09/about-bg.png?id=2627);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  justify-content: space-around;
+  margin-top: 32px;
+  display: flex;
+}
+.container-2 .left {
+  width: 34%;
+}
+.container-2 .left .left-title h5 {
+  color: #c0aa83;
+  font-size: 24px;
+  font-family: "Kanit", sans-serif;
+  line-height: 2px;
+}
+.container-2 .left .left-title h2 {
+  color: #242424;
+  font-size: 60px;
+  font-family: "Kanit", sans-serif;
+}
+.container-2 .left .left-content {
+  padding-top: 35px;
+}
+.container-2 .left .left-content span {
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 36px;
+}
+.container-2 .middle {
+  width: 10%;
+}
+.container-2 .right {
+  width: 40%;
+}
+.container-2 .right .right-top {
+  display: flex;
+}
+.container-2 .right .right-top .right-top-left {
+  width: 46%;
+}
+.container-2 .right .right-top .right-top-left .header h3 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+}
+.container-2 .right .right-top .right-top-left .content {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+.container-2 .right .right-top .right-top-right {
+  width: 46%;
+  padding-left: 50px;
+}
+.container-2 .right .right-top .right-top-right .header h3 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+}
+.container-2 .right .right-top .right-top-right .content {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.container-2 .right .right-bottom {
+  display: flex;
+  margin-top: 40px;
+}
+.container-2 .right .right-bottom .right-bottom-left {
+  width: 46%;
+}
+.container-2 .right .right-bottom .right-bottom-left .header h3 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+}
+.container-2 .right .right-bottom .right-bottom-left .content {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+.container-2 .right .right-bottom .right-bottom-right {
+  width: 46.5%;
+  padding-left: 45px;
+}
+.container-2 .right .right-bottom .right-bottom-right .header h3 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+}
+.container-2 .right .right-bottom .right-bottom-right .content {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+.container-3 {
+  margin-top: 13%;
+  display: inline-block;
+}
+.container-3 .row {
+  display: flex;
+  margin: 0 146px;
+}
+.container-3 .row .content {
+  width: 48%;
+  margin: 20px 63px;
+}
+.container-3 .row .content h1 {
+  height: 80px;
+  position: relative;
+}
+.container-3 .row .content h1:after {
+  content: "";
+  width: 15%;
+  position: absolute;
+  top: 21px;
+  left: 0px;
+  background-color: #b59b80;
+  height: 74%;
+  z-index: -1;
+  border-radius: 120px;
+}
+.container-3 .row .content h1::before {
+  content: "";
+  width: 24%;
+  position: absolute;
+  top: -28px;
+  left: 97px;
+  background-color: #b59b80;
+  height: 120%;
+  z-index: -1;
+  border-radius: 120px;
+}
+.container-3 .row .content span {
+  margin-top: 20px;
+  line-height: 28px;
+}
+.container-3 .row .image {
+  width: 48%;
+  margin-left: 3%;
+  margin-top: 5%;
+}
+.container-3 .row .image img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 49%);
+}
+.container-3 .row-2 {
+  display: flex;
+  margin: 0 173px;
+}
+.container-3 .row-2 .content {
+  width: 50%;
+  margin: 66px 63px;
+  padding-left: 38px;
+}
+.container-3 .row-2 .content h1 {
+  height: 80px;
+  position: relative;
+}
+.container-3 .row-2 .content h1::before {
+  content: "";
+  width: 25%;
+  position: absolute;
+  top: -28px;
+  left: 10px;
+  background-color: #b59b80;
+  height: 120%;
+  z-index: -1;
+  border-radius: 120px;
+}
+.container-3 .row-2 .content h1:after {
+  content: "";
+  width: 15%;
+  position: absolute;
+  top: -35px;
+  left: 137px;
+  background-color: #b59b80;
+  height: 74%;
+  z-index: -1;
+  border-radius: 120px;
+}
+.container-3 .row-2 .content span {
+  margin-top: 20px;
+  line-height: 28px;
+}
+.container-3 .row-2 .image {
+  margin-left: 37px;
+  width: 43%;
+}
+.container-3 .row-2 .image img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 49%);
+}
+.container-4 {
+  margin-top: 20px;
+  display: flex;
+  padding: 0 75px;
+}
+.container-4 .right {
+  width: 48%;
+  padding-left: 83px;
+}
+.container-4 .right img {
+  width: 100%;
+}
+.container-4 .left {
+  width: 40%;
+  margin-right: 40px;
+  margin-top: 55px;
+  font-family: "Montserrat", sans-serif;
+}
+.container-4 .left .title .first {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.container-4 .left .title .Coffee-you {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 50px;
+  color: #8d694f;
+}
+.container-4 .left .title .and {
+  font-size: 30px;
+  font-weight: 800;
+}
+.container-4 .left .content {
+  font-size: 14px;
+  line-height: 24px;
+}
+.container-4 .left .content .content-in {
+  display: flex;
+  margin-top: 16px;
+}
+.container-4 .left .content .content-content {
+  margin: auto;
+  text-align: center;
+  padding-bottom: 8px;
+}
+.container-4 .left .content .content-in .content-image {
+  width: 31%;
+  padding-bottom: 10px;
+}
+.container-4 .left .content .content-in .content-image img {
+  width: 100%;
+}
+.container-4 .left .content .content-in .content-button {
+  margin-top: 12px;
+  /* font-size:30px; */
+}
+.container-4 .left .content .content-in .content-button button {
+  background-color: #8d694f;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 40px;
+  width: 119px;
+  box-shadow: -4px 4.2px 0.3rem 0px rgb(0 0 0 / 49%);
+  cursor: pointer;
+}
+.roww {
+  width: 80%;
+  /* color: #242424; */
+  height: 1px;
+  background-color: #d3c5c53d;
+  margin: auto;
+  margin-top: 32px;
+}
+.container-5 {
+  width: 100%;
+  margin-top: 55px;
+}
+.container-5 .title {
+  margin: auto;
+  text-align: center;
+  padding: 30px 0 90px;
+  font-size: 43px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: #2b2822;
+}
+.container-5 .row {
+  display: flex;
+}
+.container-5 .col {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-5 .row .left {
+  width: 15%;
+}
+.container-5 .row .left img {
+  width: 100%;
+}
+.container-5 .row .right {
+  margin: 16px;
+}
+.product-home {
+  font-size: 43px;
+  margin: 18px;
+  text-align: center;
+  color: #2b2822;
+  font-weight: 800;
+}
+.container-6 {
+  /* display: flex;
+    overflow: hidden; */
+  /* flex-flow: row wrap; */
+  /* justify-content: space-evenly;   */
+}
+.container-6 .box {
+  align-items: center;
+
+  height: 360px;
+  background-color: #2b2822;
+  width: 200px;
+  margin-left: 54px;
+  /* flex-basis: 200px; */
+  border-radius: 20px;
+  /* margin: 74px;
+    padding: 20px; */
+  box-shadow: #3c4043 3px 3px 7px 2px;
+  transition: all ease 0.3s;
+}
+.container-6 .box:hover {
+background-color: black;
+transform-style: preserve-3d;
+transform: scale(1.02);
+transition: all ease 0.3s;
+}
+
+.container-6 .box .top {
+  margin: 16px 0 0px;
+  justify-content: space-evenly;
+  display: flex;
+  padding: 19px 0 0 0
+}
+.container-6 .box .title {
+  color: #d9be89;
+}
+
+.ps {
+  padding: 0 0 0 87px;
+  font-size: 8px;
+}
+.container-6 .box .top .name {
+  font-size: 20px;
+  font-weight: 800;
+}
+.container-6 .box .top .price {
+  font-size: 14px;
+  margin: 5px 0;
+}
+.container-6 .box .bottom {
+  display: flex;
+  margin-left: 20px;
+}
+.container-6 .box .bottom .love {
+  margin-right: 10px;
+}
+.container-6 .box .bottom .love ion-icon {
+  font-size: 18px;
+}
+
+.container-6 .box .content .image {
+  width: 200px;
+  margin: 19px 0 5px 0;
+}
+.container-6 .box .content .image img {
+  width: 100%;
+}
+
+.container-6 .box .content button {
+  background-color: #d9be89;
+  color: #2b2822;
+  margin: 10px 0 18px 44px;
+  border: none;
+  border-radius: 20px;
+  font-size: 17px;
+  line-height: 37px;
+  /* padding: 0 9px; */
+  width: 116px;
+  box-shadow: 3px 7px 6px 0px black;
+  /* font-weight: 800; */
+}
+.container-6 .box .content button span {
+  padding-bottom: 1px;
+}
+.container-6.box .bottom .ps {
+  color: #242424;
+}

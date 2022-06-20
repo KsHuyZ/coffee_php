@@ -1,0 +1,46 @@
+body{
+    background-color: #d9be89;
+    font-family: 'Nunito', sans-serif;
+}
+.container{
+    text-align: center;
+    width: 100%;
+    padding: 124px 0;
+}
+
+.container .title{
+    display: flex;
+}
+.container .title .td{
+    width: 12rem;
+}
+.container .title .index{
+    width: 40px;
+}
+.container .content{
+    display: flex;
+    margin-top: 10px;
+}
+.container .content .ct{
+    width: 12rem;
+}
+.container .content .index{
+    width: 40px;  
+}
+.container .title .view{
+    text-align: center;
+}
+.container .content .view{
+    display: flex;
+}
+.container .content button{
+    margin-right: 10px;
+    background-color:#593c20;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    width: 8rem;
+    padding: 4px 12px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #000000;
+}

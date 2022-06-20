@@ -1,0 +1,16 @@
+body{
+    background-color: #d9be89;
+    font-family: 'Nunito',sans-serif;
+}
+.container{
+    width: 100%;
+    text-align: center;
+}
+.chuto{
+    font-size: 50px;
+    font-weight: 800;
+    color: #8d694f;
+}
+.chunho{
+    font-size: 20px;
+}

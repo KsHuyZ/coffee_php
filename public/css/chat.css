@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito',sans-serif;
+}
+body{
+    position: relative;
+}
+.pop-up{
+    width: 60px;
+    cursor: pointer;
+    position: fixed;
+    top: 84%;
+    left: 91%;
+}
+.pop-up img{
+    width: 100%;
+    border-radius: 30px;
+}
+.father{
+    display: none;
+
+}
+.container-c{
+    width: 570px;
+    display: flex;
+
+    position: fixed;
+    top: 22%;
+    left: 56%;
+    justify-content: space-evenly;
+}
+.left-c{
+    background-color: #d9be89;
+    border: 1px solid;
+    border-radius: 15px;
+}
+.left-c .search-user{
+    width: 240px;
+    display: flex;
+    position: relative;
+}
+.left-c .search-user input{
+    border-radius: 30px;
+    border: 1px solid;
+    outline: none;
+    padding: 5px 5px 5px 10px;
+    margin: 8px;
+    width: 188px;
+}
+.left-c .search-user svg{
+    position: absolute;
+    top: 13.5px;
+    left: 187px;
+    width: 17px;
+}
+.users{
+    height: 300px;
+    overflow-y: auto;
+}
+.user{
+    display: flex;
+    justify-content: flex-start;
+    margin: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid;
+}
+.user .img{
+    width: 59px;
+}
+.user .img img{
+    width: 100%;
+    border-radius: 41px;
+    height: 59px;
+}
+.user .name-user{
+    padding: 20px;
+}
+.right-c{
+    width: 268px;
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: #d9be89;
+    display: none;
+    transition: 0.7s;
+}
+.right-c .title{
+    display: flex;
+   border-bottom: 1px solid;
+}
+.right-c .title .img{
+    width: 40px;
+    margin: 7px;
+}
+.right-c .title .img img{
+    width: 100%;
+    border-radius: 30px;
+    height: 40px;
+}
+.right-c .title .name-title{
+    margin: 16px;
+}
+.field-chat{
+    height: 232px;
+    overflow: auto;
+    border-bottom: 1px solid;
+    flex-direction: column-reverse;
+}
+.right-c ::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+ .right-c ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .right-c ::-webkit-scrollbar-thumb {
+    background: #7c4d1f; 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  .right-c ::-webkit-scrollbar-thumb:hover {
+    background: #593c20; 
+  }
+.field-chat .to{
+    display: flex;
+    justify-content: start;
+    margin-left: 10px;
+}
+.to-user{
+    padding: 10px;
+    border-radius: 30px;
+       background-color: #e4e6eb;
+       
+}
+.field-chat .from{
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+}
+.field-chat .from .from-user{
+    padding: 10px;
+    border-radius: 30px;
+       background-color: #675941;
+       color: white;
+}
+.field-write{
+    display: flex;
+    justify-content: space-around;
+}
+.field-write input{
+
+width: 12rem;
+
+border-radius: 17px;
+
+border: 1px solid;
+
+margin: 10px;
+
+padding: 5px 11px;
+outline: none;
+}
+.field-write svg{
+    width: 30px;
+   color: #675941;
+}
+.Nomess{
+    font-size: 18px;
+    margin: 43px;
+}

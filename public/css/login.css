@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    overflow: hidden;
+}
+html{
+    background-image: url('https://wallpaperaccess.com/full/279547.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+}
+.container{
+    width: 350px;
+    height: auto;
+    margin: 5% auto;
+    background-color: rgba(116, 108, 108, 0.432);
+    border-radius: 10px;
+    padding: 0 30px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+    position: fixed;
+    left: 34%;
+    transition: 0.5s;
+    opacity: 1;
+}
+.container.active{
+    opacity: 0;
+    transition: 1s;
+left: -39%;
+}
+.container .title{
+    padding: 10px 0 0 0;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    color: #d9be89;
+    font-size: 60px;
+    font-weight: 800;
+}
+.container .field{
+    font-family: Segoe ui light;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.container .field input{
+    border: none;
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    outline: none;
+    font-size:16px;
+    background: rgba(0,0,0,0);
+}
+.field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font: size 16px;
+    pointer-events: none;
+    transition: .6s;
+}
+.field span::before{
+content: '';
+position: absolute;
+top: 40px;left: 0;
+width: 0%;
+height: 2px;
+background:#ede0d4;
+transition: .6s;
+}
+.field input:focus ~label,
+.field input:valid ~label{
+    top: -5px;
+    color: #ede0d4;
+
+}
+.field input:focus ~span::before,
+.field input:valid ~span::before{
+    width: 100%;
+}
+.container .loginform input.Login{
+    width: 100%;
+    margin: 10px auto;
+    height:40px;
+    border-radius: 21px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size:29px;
+    background-color: #ad6d2f;
+    color: #ede0d4;
+    border: none;
+    transition: 0.6s;
+
+}
+.container .loginform input.Login:hover{
+
+    box-shadow: 1rem 1rem 2rem rgba(34, 33, 33, 0.952);
+}
+.container .Signup{
+    color: #ede0d4;
+    text-decoration: none;
+}
+.container .Signup a{
+    color: #2b1e15;
+    text-decoration: none;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+}
+.signup-form{
+    opacity: 0;
+    transition: 1s;
+    width: 482px;
+    height: auto;
+    margin: 2% auto;
+    background-color: rgba(116, 108, 108, 0.432);
+    border-radius: 10px;
+    padding: 0 30px 20px;
+    box-shadow: 0 0 10px rgb(0 0 0);
+    position: fixed;
+    top: 0;
+    right: -50%;
+}
+.signup-form.active{
+opacity: 1;
+transition: 1s;
+right: 30%;
+}
+.signup-form .title{
+    padding: 10px 0 0 0;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    color: #d9be89;
+    font-size: 60px;
+    font-weight: 800;
+}
+.username{
+    text-align: center;
+}
+.enterhere .add .span{
+    color: #adadad;
+}
+.enterhere input{
+width: 162px;
+background: none;
+border: 1px solid #adadad;
+border-radius: 10px;
+outline: none;
+padding-left: 30px;
+}
+.enterhere .add{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    /* flex-direction: row; */
+}
+.enterhere .Image .border-img{
+    height: 162px;
+    border: 1px solid #adadad;
+    border-radius: 10px;
+}
+.enterhere .Image input{
+  height: 100%;
+cursor: pointer;
+opacity: 0;
+}
+#preview{
+    width: 162px;
+    position: fixed;
+    right: 3.5%;
+    height: 162px;
+    z-index: -3;
+    opacity: 0;
+}
+#preview.active{
+    right: 33.5%;
+    opacity: 1;
+}
+.singup-btn{
+    width: 100%;
+    margin: 10px auto;
+    height:40px;
+    border-radius: 21px;
+    font-family: 'Nunito', sans-serif;
+    font-size:29px;
+    background-color: #ad6d2f;
+    color: #ede0d4;
+    border: none;
+    transition: 0.6s; 
+}
+.Loginnow{
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 800; color: #ad6d2f;
+}
+.error-login{
+    color: red;
+    font-size: 15px;
+    position: fixed;
+    top: 33%;
+}
+.error-regis{
+    
+position: fixed;
+    
+top: 12%;
+    
+color: red;
+    
+font-size: 15px;
+}
